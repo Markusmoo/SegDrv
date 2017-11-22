@@ -6,12 +6,15 @@
  */
 
 #include <stdio.h>
+#include <P18F4620.h>
 
 #ifndef SEGDRV_H
 #define	SEGDRV_H
 
-int disp(int,char);
-int disp(char[]);
+void setDisplayEnabled(int);
+int dispChar(int,char);
+int dispString(char[]);
+int insert(char);
 
 /*
 #ifdef	__cplusplus

@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=segdrv.c main.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c segdrv.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/segdrv.o ${OBJECTDIR}/main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/segdrv.o.d ${OBJECTDIR}/main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/segdrv.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/segdrv.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/segdrv.o ${OBJECTDIR}/main.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/segdrv.o
 
 # Source Files
-SOURCEFILES=segdrv.c main.c
+SOURCEFILES=main.c segdrv.c
 
 
 CFLAGS=
@@ -89,14 +89,6 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/segdrv.o: segdrv.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/segdrv.o.d 
-	@${RM} ${OBJECTDIR}/segdrv.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/segdrv.o   segdrv.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/segdrv.o 
-	@${FIXDEPS} "${OBJECTDIR}/segdrv.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
@@ -105,15 +97,15 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${DEP_GEN} -d ${OBJECTDIR}/main.o 
 	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-else
 ${OBJECTDIR}/segdrv.o: segdrv.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/segdrv.o.d 
 	@${RM} ${OBJECTDIR}/segdrv.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/segdrv.o   segdrv.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/segdrv.o   segdrv.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/segdrv.o 
 	@${FIXDEPS} "${OBJECTDIR}/segdrv.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
@@ -121,6 +113,14 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main.o   main.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/main.o 
 	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/segdrv.o: segdrv.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/segdrv.o.d 
+	@${RM} ${OBJECTDIR}/segdrv.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/segdrv.o   segdrv.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/segdrv.o 
+	@${FIXDEPS} "${OBJECTDIR}/segdrv.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 
