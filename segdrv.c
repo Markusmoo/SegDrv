@@ -67,17 +67,42 @@ void setDisplayEnabled(int portAB){
 }
 
 int dispChar(int pos, char c){
-    switch(pos){
-        case 0: if(usePortAB) PORTA = 0b00000001; else PORTC = 0b00000001; break;
-        case 1: if(usePortAB) PORTA = 0b00000010; else PORTC = 0b00000010; break;
-        case 2: if(usePortAB) PORTA = 0b00000100; else PORTC = 0b00000100; break;
-        case 3: if(usePortAB) PORTA = 0b00001000; else PORTC = 0b00001000; break;
-        default: if(usePortAB) PORTA = 0; else PORTC = 0; break;
+    /*switch(pos){
+        case 0: if(usePortAB) PORTA = 0b00000001; else PORTC = 0b00000001;
+        case 1: if(usePortAB) PORTA = 0b00000010; else PORTC = 0b00000010;
+        case 2: if(usePortAB) PORTA = 0b00000100; else PORTC = 0b00000100;
+        case 3: if(usePortAB) PORTA = 0b00001000; else PORTC = 0b00001000;
+        default: if(usePortAB) PORTA = 0; else PORTC = 0;
     }
-    
+    switch(pos){
+        case 0: PORTC = 0b00000001; break;
+        case 1: PORTC = 0b00000010; break;
+        case 2: PORTC = 0b00000100; break;
+        case 3: PORTC = 0b00001000; break;
+        default: PORTC = 0; break;
+    }*/
+     
     if(usePortAB){
+        if(pos == 0){
+            PORTA = 0b00000001;
+        }else if(pos == 1){
+            PORTA = 0b00000010;
+        }else if(pos == 2){
+            PORTA = 0b00000100;
+        }else if(pos == 3){
+            PORTA = 0b00001000;
+        }
         PORTB = insert(c);
     }else{
+        if(pos == 0){
+            PORTC = 0b00000001;
+        }else if(pos == 1){
+            PORTC = 0b00000010;
+        }else if(pos == 2){
+            PORTC = 0b00000100;
+        }else if(pos == 3){
+            PORTC = 0b00001000;
+        }
         PORTD = insert(c);
     }
 }

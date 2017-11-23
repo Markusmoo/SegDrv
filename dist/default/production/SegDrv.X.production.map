@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Wed Nov 22 15:53:23 2017
+Linker Map File - Created Thu Nov 23 12:25:04 2017
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -7,46 +7,46 @@ Linker Map File - Created Wed Nov 22 15:53:23 2017
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x00001a
          .code_vfprintf.o       code   0x000020    program   0x000c22
-           .code_segdrv.o       code   0x000c42    program   0x000274
-               _cinit_scn       code   0x000eb6    program   0x00009e
-           .code_printf.o       code   0x000f54    program   0x000098
-             .code_putc.o       code   0x000fec    program   0x000084
-          .code_fxm3232.o       code   0x001070    program   0x000070
-                   STRING       code   0x0010e0    program   0x000066
-             .code_main.o       code   0x001146    program   0x000064
-                     PROG       code   0x0011aa    program   0x00005a
-         .code_fxd3232u.o       code   0x001204    program   0x000048
-                    CTYPE       code   0x00124c    program   0x000024
-                    .code       code   0x001270    program   0x000020
-             _startup_scn       code   0x001290    program   0x00001c
-                    STDIO       code   0x0012ac    program   0x00001c
-             .stringtable    romdata   0x0012c8    program   0x000014
-      .romdata_vfprintf.o    romdata   0x0012dc    program   0x000011
-      .idata_fxd3232u.o_i    romdata   0x0012ed    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x0012ed    program   0x000000
-       .idata_fxm3232.o_i    romdata   0x0012ed    program   0x000000
-       .romdata_fxm3232.o    romdata   0x0012ed    program   0x000000
-          .idata_putc.o_i    romdata   0x0012ed    program   0x000000
-          .romdata_putc.o    romdata   0x0012ed    program   0x000000
-    .idata__user_putc.o_i    romdata   0x0012ed    program   0x000000
-    .romdata__user_putc.o    romdata   0x0012ed    program   0x000000
-         .idata_c018i.o_i    romdata   0x0012ed    program   0x000000
-         .romdata_c018i.o    romdata   0x0012ed    program   0x000000
-          .idata_main.o_i    romdata   0x0012ed    program   0x000000
-          .romdata_main.o    romdata   0x0012ed    program   0x000000
-        .romdata_segdrv.o    romdata   0x0012ed    program   0x000000
-        .idata___init.o_i    romdata   0x0012ed    program   0x000000
-        .romdata___init.o    romdata   0x0012ed    program   0x000000
-        .idata_printf.o_i    romdata   0x0012ed    program   0x000000
-        .romdata_printf.o    romdata   0x0012ed    program   0x000000
-        .romdata_stdout.o    romdata   0x0012ed    program   0x000000
-      .idata_vfprintf.o_i    romdata   0x0012ed    program   0x000000
-            .code_c018i.o       code   0x0012ee    program   0x000000
-       .code__user_putc.o       code   0x0012ee    program   0x000002
-           .code_stdout.o       code   0x0012ee    program   0x000000
-           .code___init.o       code   0x0012f0    program   0x000002
-        .idata_stdout.o_i    romdata   0x0012f2    program   0x000002
-        .idata_segdrv.o_i    romdata   0x0012f4    program   0x000002
+           .code_segdrv.o       code   0x000c42    program   0x0002ba
+               _cinit_scn       code   0x000efc    program   0x00009e
+           .code_printf.o       code   0x000f9a    program   0x000098
+             .code_putc.o       code   0x001032    program   0x000084
+          .code_fxm3232.o       code   0x0010b6    program   0x000070
+                   STRING       code   0x001126    program   0x000066
+             .code_main.o       code   0x00118c    program   0x00005c
+                     PROG       code   0x0011e8    program   0x00005a
+         .code_fxd3232u.o       code   0x001242    program   0x000048
+                    CTYPE       code   0x00128a    program   0x000024
+                    .code       code   0x0012ae    program   0x000020
+             _startup_scn       code   0x0012ce    program   0x00001c
+                    STDIO       code   0x0012ea    program   0x00001c
+             .stringtable    romdata   0x001306    program   0x000014
+      .romdata_vfprintf.o    romdata   0x00131a    program   0x000011
+      .idata_fxd3232u.o_i    romdata   0x00132b    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x00132b    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x00132b    program   0x000000
+       .romdata_fxm3232.o    romdata   0x00132b    program   0x000000
+          .idata_putc.o_i    romdata   0x00132b    program   0x000000
+          .romdata_putc.o    romdata   0x00132b    program   0x000000
+    .idata__user_putc.o_i    romdata   0x00132b    program   0x000000
+    .romdata__user_putc.o    romdata   0x00132b    program   0x000000
+         .idata_c018i.o_i    romdata   0x00132b    program   0x000000
+         .romdata_c018i.o    romdata   0x00132b    program   0x000000
+          .idata_main.o_i    romdata   0x00132b    program   0x000000
+          .romdata_main.o    romdata   0x00132b    program   0x000000
+        .romdata_segdrv.o    romdata   0x00132b    program   0x000000
+        .idata___init.o_i    romdata   0x00132b    program   0x000000
+        .romdata___init.o    romdata   0x00132b    program   0x000000
+        .idata_printf.o_i    romdata   0x00132b    program   0x000000
+        .romdata_printf.o    romdata   0x00132b    program   0x000000
+        .romdata_stdout.o    romdata   0x00132b    program   0x000000
+      .idata_vfprintf.o_i    romdata   0x00132b    program   0x000000
+            .code_c018i.o       code   0x00132c    program   0x000000
+       .code__user_putc.o       code   0x00132c    program   0x000002
+           .code_stdout.o       code   0x00132c    program   0x000000
+           .code___init.o       code   0x00132e    program   0x000002
+        .idata_stdout.o_i    romdata   0x001330    program   0x000002
+        .idata_segdrv.o_i    romdata   0x001332    program   0x000002
                 MATH_DATA      udata   0x000000       data   0x000014
                  .tmpdata      udata   0x000014       data   0x000007
            .udata_c018i.o      udata   0x000080       data   0x00000a
@@ -79,29 +79,29 @@ Linker Map File - Created Wed Nov 22 15:53:23 2017
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x0012ec      
-                            0x0012ee    0x0012f5      
-            4853 out of 66584 program addresses used, program memory utilization is 7%
+                            0x000000    0x00132a      
+                            0x00132c    0x001333      
+            4915 out of 66584 program addresses used, program memory utilization is 7%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                 FXD3232U   0x001204    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                 FXM1616S   0x0011aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                  FXM3232   0x001070    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-               TSIGN1616A   0x0011f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                   _2jEnd   0x001130    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-       ___return_lbl00000   0x0011a8    program     static                          
-       ___return_lbl00000   0x00124a    program     static                          
+                 FXD3232U   0x001242    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 FXM1616S   0x0011e8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  FXM3232   0x0010b6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+               TSIGN1616A   0x001234    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                   _2jEnd   0x001176    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+       ___return_lbl00000   0x0011e6    program     static                          
+       ___return_lbl00000   0x001288    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x0010de    program     static                          
-       ___return_lbl00001   0x0012aa    program     static                          
-       ___return_lbl00002   0x000f52    program     static                          
-        ___while_lbl00001   0x0011a4    program     static                          
-        ___while_lbl00002   0x0011a8    program     static                          
-                   __init   0x0012f0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+       ___return_lbl00000   0x001124    program     static                          
+       ___return_lbl00001   0x0012e8    program     static                          
+       ___return_lbl00002   0x000f98    program     static                          
+        ___while_lbl00001   0x0011e2    program     static                          
+        ___while_lbl00002   0x0011e6    program     static                          
+                   __init   0x00132e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                    __pa_0   0x000960    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                    __pa_1   0x000968    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                   __pa_10   0x000a1c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
@@ -149,49 +149,49 @@ Linker Map File - Created Wed Nov 22 15:53:23 2017
                    __pa_7   0x0009ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                    __pa_8   0x0009da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                    __pa_9   0x0009fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-               __string_0   0x0012c8    program     static C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
+               __string_0   0x001306    program     static C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
               __tmplbl_42   0x000af6    program     static                          
               __tmplbl_43   0x00093e    program     static                          
               __tmplbl_44   0x000924    program     static                          
               __tmplbl_85   0x000076    program     static                          
-            __zero_memory   0x001270    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                _do_cinit   0x000eb6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x0012ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                _do_cinit   0x000efc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x001246    program     static                          
-                 _startup   0x001290    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              _usart_putc   0x0012ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-               _user_putc   0x0012ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
-                compare_l   0x001286    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                copy_loop   0x000f28    program     static                          
-            copy_one_byte   0x000f2e    program     static                          
+                   _false   0x001284    program     static                          
+                 _startup   0x0012ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              _usart_putc   0x0012ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+               _user_putc   0x00132c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
+                compare_l   0x0012c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                copy_loop   0x000f6e    program     static                          
+            copy_one_byte   0x000f74    program     static                          
                  dispChar   0x000c7a    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-               dispString   0x000d32    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-                     done   0x000f52    program     static                          
-             done_copying   0x000f3c    program     static                          
-                   insert   0x000d54    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-                  isdigit   0x00124c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                     jEnd   0x001132    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     jEnd   0x0010fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x00111a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                    jLoop   0x0010f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                   jMatch   0x00126c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x00126e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                     loop   0x001212    program     static                          
-                     loop   0x0012bc    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-                     loop   0x0012a0    program     static                          
-                   loop_h   0x00127e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x001288    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     main   0x001146    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
-                   printf   0x000f54    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\printf.c
-                     putc   0x000fec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
-                 s_digits   0x0012dc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+               dispString   0x000d78    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
+                     done   0x000f98    program     static                          
+             done_copying   0x000f82    program     static                          
+                   insert   0x000d9a    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
+                  isdigit   0x00128a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                     jEnd   0x001178    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x001140    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x001160    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x001136    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                   jMatch   0x0012aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0012ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                     loop   0x001250    program     static                          
+                     loop   0x0012fa    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+                     loop   0x0012de    program     static                          
+                   loop_h   0x0012bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x0012c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     main   0x00118c    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
+                   printf   0x000f9a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\printf.c
+                     putc   0x001032    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                 s_digits   0x00131a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
             s_put_n_chars   0x000020    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
         setDisplayEnabled   0x000c42    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-                   strlen   0x0010e0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                strlenpgm   0x0010fc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     test   0x000ed0    program     static                          
+                   strlen   0x001126    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x001142    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     test   0x000f16    program     static                          
                  vfprintf   0x00004c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-               zero_block   0x00127e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x0012bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -323,7 +323,7 @@ Linker Map File - Created Wed Nov 22 15:53:23 2017
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     SIGN   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -379,26 +379,26 @@ Linker Map File - Created Wed Nov 22 15:53:23 2017
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 __AARGB0   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB1   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB2   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB3   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB4   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB5   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB6   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB7   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                   __AEXP   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                    __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                __FPFLAGS   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                  __REMB0   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB1   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB3   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                    __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                  __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                  __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
@@ -478,69 +478,69 @@ Linker Map File - Created Wed Nov 22 15:53:23 2017
                   __pa_46   0x000c38    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
         setDisplayEnabled   0x000c42    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
                  dispChar   0x000c7a    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-               dispString   0x000d32    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-                   insert   0x000d54    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
-                _do_cinit   0x000eb6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x000ed0    program     static                          
-                copy_loop   0x000f28    program     static                          
-            copy_one_byte   0x000f2e    program     static                          
-             done_copying   0x000f3c    program     static                          
-                     done   0x000f52    program     static                          
-       ___return_lbl00002   0x000f52    program     static                          
-                   printf   0x000f54    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\printf.c
-                     putc   0x000fec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
-                  FXM3232   0x001070    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x0010de    program     static                          
-                   strlen   0x0010e0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x0010f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x0010fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                strlenpgm   0x0010fc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                    jLoop   0x00111a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                   _2jEnd   0x001130    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     jEnd   0x001132    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     main   0x001146    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
-        ___while_lbl00001   0x0011a4    program     static                          
-        ___while_lbl00002   0x0011a8    program     static                          
-       ___return_lbl00000   0x0011a8    program     static                          
-                 FXM1616S   0x0011aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-               TSIGN1616A   0x0011f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                 FXD3232U   0x001204    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x001212    program     static                          
-                   _false   0x001246    program     static                          
-       ___return_lbl00000   0x00124a    program     static                          
-                  isdigit   0x00124c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                   jMatch   0x00126c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x00126e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-            __zero_memory   0x001270    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-               zero_block   0x00127e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_h   0x00127e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                compare_l   0x001286    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   loop_l   0x001288    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 _startup   0x001290    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x0012a0    program     static                          
-       ___return_lbl00001   0x0012aa    program     static                          
-              _usart_putc   0x0012ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-                     loop   0x0012bc    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-               __string_0   0x0012c8    program     static C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
-                 s_digits   0x0012dc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-               _user_putc   0x0012ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
-                   __init   0x0012f0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                 __AARGB7   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB3   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB6   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB1   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB5   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB0   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB4   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB3   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB2   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB1   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB0   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                   __AEXP   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                     SIGN   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                __FPFLAGS   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+               dispString   0x000d78    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
+                   insert   0x000d9a    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\segdrv.c
+                _do_cinit   0x000efc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000f16    program     static                          
+                copy_loop   0x000f6e    program     static                          
+            copy_one_byte   0x000f74    program     static                          
+             done_copying   0x000f82    program     static                          
+                     done   0x000f98    program     static                          
+       ___return_lbl00002   0x000f98    program     static                          
+                   printf   0x000f9a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\printf.c
+                     putc   0x001032    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                  FXM3232   0x0010b6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x001124    program     static                          
+                   strlen   0x001126    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x001136    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x001140    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x001142    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x001160    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                   _2jEnd   0x001176    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x001178    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     main   0x00118c    program     extern C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
+        ___while_lbl00001   0x0011e2    program     static                          
+        ___while_lbl00002   0x0011e6    program     static                          
+       ___return_lbl00000   0x0011e6    program     static                          
+                 FXM1616S   0x0011e8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x001234    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                 FXD3232U   0x001242    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x001250    program     static                          
+                   _false   0x001284    program     static                          
+       ___return_lbl00000   0x001288    program     static                          
+                  isdigit   0x00128a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                   jMatch   0x0012aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0012ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+            __zero_memory   0x0012ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               zero_block   0x0012bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_h   0x0012bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                compare_l   0x0012c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   loop_l   0x0012c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 _startup   0x0012ce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x0012de    program     static                          
+       ___return_lbl00001   0x0012e8    program     static                          
+              _usart_putc   0x0012ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+                     loop   0x0012fa    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+               __string_0   0x001306    program     static C:\Users\300145948\Desktop\ProjectC\SegDrv.X\main.c
+                 s_digits   0x00131a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+               _user_putc   0x00132c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
+                   __init   0x00132e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
                  __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                  __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm

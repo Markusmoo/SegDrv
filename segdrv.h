@@ -11,6 +11,8 @@
 #ifndef SEGDRV_H
 #define	SEGDRV_H
 
+extern int usePortAB;
+
 void setDisplayEnabled(int);
 int dispChar(int,char);
 int dispString(char[]);

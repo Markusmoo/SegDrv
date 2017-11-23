@@ -16,13 +16,9 @@
  */
 void main(){
     setDisplayEnabled(0);
-    dispChar(1,'O');
-    //printf("NEW2 PORT %b %b %b\n",PORTD,TRISC,PORTC);
-    
-    TRISD = 0;
-    TRISC = 0;
-    PORTC = 1;
+    dispChar(3,'r');
     //PORTD = 0b10101010;
+    //dispChar(1,'h');
     printf("NEW2 PORT %b %b %b\n",PORTD,TRISC,PORTC);
     while(1) Nop();
 }
