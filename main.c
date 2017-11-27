@@ -11,15 +11,22 @@
 #include <delays.h>
 #include "segdrv.h"
 
+//char str[] = {'c','h','a','r'};
+char ch[] = {'c','o','d','y'};
 /*
  * 
  */
 void main(){
     setDisplayEnabled(0);
-    dispChar(3,'r');
-    //PORTD = 0b10101010;
-    //dispChar(1,'h');
-    printf("NEW2 PORT %b %b %b\n",PORTD,TRISC,PORTC);
+    while(1){
+        /*while(ch <= 'z'){
+            dispChar(0,ch++);
+            Delay10KTCYx(11);
+        }
+        ch = 'a';*/
+        dispString(4,ch);
+    }
     while(1) Nop();
+    //while(1) dispString(4, str);
 }
 

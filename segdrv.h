@@ -15,7 +15,7 @@ extern int usePortAB;
 
 void setDisplayEnabled(int);
 int dispChar(int,char);
-int dispString(char[]);
+int dispString(int,char[]);
 int insert(char);
 
 /*

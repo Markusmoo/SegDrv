@@ -9,6 +9,8 @@
 #include <P18F4620.h>
 #include <ctype.h>
 
+#define SPACE   0xff
+
 #define ZERO    0xc0
 #define ONE     0xf9
 #define TWO     0xa4
@@ -20,13 +22,13 @@
 #define EIGHT   0x80
 #define NINE    0x98
 
-#define VK_A    0xc8
+#define VK_A    0x88
 #define VK_B    0x83
-#define VK_C    0xcb
+#define VK_C    0xc6
 #define VK_D    0xa1
 #define VK_E    0x86
 #define VK_F    0x8e
-#define VK_G    0xb0
+#define VK_G    0x90
 #define VK_H    0x8b
 #define VK_I    0xf9
 #define VK_J    0xf1
@@ -35,13 +37,13 @@
 #define VK_M    0xea
 #define VK_N    0xab
 #define VK_O    0xa3
-#define VK_P    0xcc
+#define VK_P    0x8c
 #define VK_Q    0x84
 #define VK_R    0xaf
-#define VK_S    0xd2
+#define VK_S    0x92
 #define VK_T    0x87
-#define VK_U    0x41
-#define VK_V    0xae
+#define VK_U    0xc1
+#define VK_V    0xe3
 #define VK_W    0xd5
 #define VK_X    0x89
 #define VK_Y    0x91
@@ -107,15 +109,33 @@ int dispChar(int pos, char c){
     }
 }
 
-int dispString(char segTxt[]){
+int idx = 0;
+
+int dispString(int size, char segTxt[]){
     if(segTxt == NULL){         //If text is empty; returns.
         return 0;
     }
+    /*for(idx = 0; idx < size; idx++){
+        dispChar(idx, segTxt[idx]);
+        Delay10KTCYx(10); //TODO change to ..1KTCY..
+    }*/
+    //dispChar(0, segTxt[0]);
+    //Delay10KTCYx(2);
+    dispChar(1, segTxt[1]);
+    Delay10KTCYx(2);
+    //dispChar(2, segTxt[2]);
+    dispChar(1, ' ');
+    //Delay10KTCYx(2);
+    dispChar(3, segTxt[3]);
+    Delay10KTCYx(20);
+    dispChar(3, ' ');
 }
 
 int insert(char c){
     if(c >= 'A' && c <= 'Z') c+= 'a'-'A'; //Converts uppercase to lowercase
     switch(c){
+        case ' ': return SPACE;
+        
         case '0': return ZERO;
         case '1': return ONE;
         case '2': return TWO;
@@ -126,6 +146,7 @@ int insert(char c){
         case '7': return SEVEN;
         case '8': return EIGHT;
         case '9': return NINE;
+        
         case 'a': return VK_A;
         case 'b': return VK_B;
         case 'c': return VK_C;
@@ -152,6 +173,7 @@ int insert(char c){
         case 'x': return VK_X;
         case 'y': return VK_Y;
         case 'z': return VK_Z;
+        
         default: return 0;
     }
 }
