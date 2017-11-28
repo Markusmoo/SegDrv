@@ -13,6 +13,7 @@
 
 //char str[] = {'c','h','a','r'};
 char ch[] = {'c','o','d','y'};
+//char ch[] = "cody";
 /*
  * 
  */
