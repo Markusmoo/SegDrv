@@ -49,7 +49,9 @@
 #define VK_Y    0x91
 #define VK_Z    0xb4
 
+int cfgDelay = 1;
 int usePortAB = 0;
+int idx;
 
 /**
  * Turns on the port(s) specified and prepares the PIC processor to
@@ -57,7 +59,7 @@ int usePortAB = 0;
  * 
  * @param portAB 1 to use port A&B, 0 to use port C&D
  */
-void setDisplayEnabled(int portAB){
+void setDisplayEnabled(int portAB, int configDelay){
     if(portAB){
         TRISA = 0x00;
         TRISB = 0x00;
@@ -66,6 +68,11 @@ void setDisplayEnabled(int portAB){
         TRISD = 0x00;
     }
     usePortAB = portAB;
+    cfgDelay = configDelay;
+}
+
+void dispClear(){
+    
 }
 
 int dispChar(int pos, char c){
@@ -85,6 +92,7 @@ int dispChar(int pos, char c){
     }*/
      
     if(usePortAB){
+        PORTA = 0;
         if(pos == 0){
             PORTA = 0b00000001;
         }else if(pos == 1){
@@ -96,6 +104,7 @@ int dispChar(int pos, char c){
         }
         PORTB = insert(c);
     }else{
+        PORTC = 0;
         if(pos == 0){
             PORTC = 0b00000001;
         }else if(pos == 1){
@@ -109,26 +118,26 @@ int dispChar(int pos, char c){
     }
 }
 
-int idx = 0;
-
 int dispString(int size, char segTxt[]){
     if(segTxt == NULL){         //If text is empty; returns.
         return 0;
     }
-    /*for(idx = 0; idx < size; idx++){
+    
+    for(idx = 0; idx < 4; idx++){
+        dispChar(idx, ' ');
         dispChar(idx, segTxt[idx]);
-        Delay10KTCYx(10); //TODO change to ..1KTCY..
-    }*/
-    //dispChar(0, segTxt[0]);
-    //Delay10KTCYx(2);
+        Delay1KTCYx(1); //TODO change to ..1KTCY..
+    }
+    /*dispChar(0, segTxt[0]);
+    Delay1KTCYx(1);
     dispChar(1, segTxt[1]);
-    Delay10KTCYx(2);
-    //dispChar(2, segTxt[2]);
-    dispChar(1, ' ');
-    //Delay10KTCYx(2);
+    Delay1KTCYx(1);
+    dispChar(2, segTxt[2]);
+    //dispChar(1, ' ');
+    Delay1KTCYx(1);
     dispChar(3, segTxt[3]);
-    Delay10KTCYx(20);
-    dispChar(3, ' ');
+    Delay1KTCYx(1);
+    //dispChar(3, ' ');*/
 }
 
 int insert(char c){
